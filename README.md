@@ -1,6 +1,6 @@
 **Mvt-Project-Women-LEAD-Nepal** <br>
 <br>
-A Django MVT web project built to support and showcase the Women LEAD Nepal initiative. <br>
+A Django MVT web project built, while I was in Women LEAD Nepal as a LEAD course Leader and at the same time I was learning Django mvt flow so, for practice i simply made this. <br>
 This project demonstrates the use of Django’s Model–View–Template architecture
  <br> combining Python, HTML, and CSS to deliver a dynamic web application. <br>
 
