@@ -3,7 +3,7 @@ A Django MVT web project built to support and showcase the Women LEAD Nepal init
 This project demonstrates the use of Django’s Model–View–Template architecture
  <br> combining Python, HTML, and CSS to deliver a dynamic web application. <br>
 
-🚀 Features <br>
+ Features <br>
 1) Django MVT architecture: Clean separation of concerns with models, views, and templates. <br>
 2) Dynamic content rendering: HTML templates powered by Django views. <br>
 3) Python backend logic: Handles routing, data processing, and integration.<br>
