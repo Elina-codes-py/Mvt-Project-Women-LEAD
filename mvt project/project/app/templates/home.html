@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custome css link -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-lg new_navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><b class="text-danger">E</b>lina</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto gap-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link bg-info active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About us">About us</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+     <!-- navbar section end -->
+
+     <!-- carousel section start -->
+     <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/day1.png' %}" class="d-block w-100 c_img" alt="...">
+          <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+            <h5 class="fs-3 mt-4 text-capitalize fw-bold"><b class="text-danger fs-1 fw-bolder">Y</b>our voice matters, your dreams are valid</h5>
+            <p class="display-2 fw-bold text-info">Empowered women empower communities</p>
+            <button type="button" class="btn mt-5 btn-outline-warning rounded-pill btn-primary">Explore</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/day2.png' %}" class="d-block w-100 c_img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Every woman has a story—write yours with courage.</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/day3.png' %}" class="d-block w-100 c_img" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Be the woman who lifts others as she rises.</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      <!-- carousel section end -->
+
+
+      <!-- about section start -->
+       <section class="my-4" id="About us">
+        <div class="about text-center">
+          <h1 class="text-capitalize text-danger fw-bold">about us</h1>
+          <hr class="border-3 w-25 text-danger opacity-100 mx-auto">
+
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                  <img src="{% static 'images/profile.png' %}" class="img-fluid about_img" alt="">
+              </div>
+
+              <div class="col-6 d-flex justify-content-center align-items-center flex-column">
+                <h1 class="text-info fw-bold">Women LEAD Nepal</h1>
+                <p class="text-start">Women Lead Nepal runs intensive leadership training programs designed to enhance public speaking, critical thinking, problem-solving, and decision-making skills. These programs are tailored for young women aged 18-25 who aspire to bring positive change to their communities.</p>
+                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="click here to learn more">learn More</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+       </section>
+       <!-- about section end -->
+
+       <!-- service section start -->
+        <section class="my-4" id="service">
+          <div class="service text-center">
+            <h1 class="text-danger fw-bold">service</h1>
+            <hr class="w-25 mx-auto text-danger border-3 opacity-100">
+
+            <div class="container alert alert-secondary">
+              <div class="row">
+                <div class="col-4">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/day4.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold text-info">Leadership and Enterprenurship</h5>
+                      <p class="card-text">Women Lead Nepal emphasizes leadership and entrepreneurship by equipping young women with the skills, confidence, and resources to excel. </p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/day5.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold text-info">Netwroking and Mentorship</h5>
+                      <p class="card-text">The organization connects young women with like-minded peers, professionals, and organizations, fostering a strong support system. It also helps participants build relationships with influential leaders in various sectors.</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="{% static 'images/day6.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold text-info">Advocay and Professional Development</h5>
+                      <p class="card-text"> It focuses on advocacy and professional development to empower young women. Through advocacy, it raises awareness about gender equality, supports community-based projects, engages in policy dialogues, and amplifies women’s voices.</p>
+                      <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- service section end -->
+<!-- contact section -->
+ <section id="contact">
+  <div class="contact text-center">
+    <h1 class="text-capitalize text-danger fw-bold">contact us</h1>
+    <hr class="border-3 opacity-100 text-info w-25 mx-auto">
+
+    <div class="container ho">
+      <div class="row">
+        <div class="col-12">
+
+          <form method="POST" action="{% url 'home' %}">
+            {% csrf_token %}
+          
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             
+            
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Message</label>
+                  <input type="text" name="message" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>  
+              </div> 
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>       
+        </div>
+
+       
+          <h1 class="text-info text-center fw-bold"> or connect with social media</h1>
+          <button type="button" class="btn btn-primary"><i class="fa-brands fa-facebook"></i>Facebook</button>
+          <button type="button" class="btn btn-warning"><i class="fa-brands fa-google"></i>Google</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+ </section>
+
+ <!-- contact section end -->
+    <p class="text-center">All coopyright reserved by <b class="text-danger">Elina</b></p>
+    <!-- boostrap cdn js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+</body>
+</html>
